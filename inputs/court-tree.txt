@@ -1,0 +1,27 @@
+A: START: Which court has jurisdiction for this case?
+  B: Is this an appeal from a lower court/body decision?
+    B1: YES → Is this an appeal from High Court?
+      C1: YES → SUPREME COURT (Section 9)
+        | Has appellate jurisdiction
+      C2: NO → Is this from District Court?
+        D1: YES → Does it involve:
+          | 10+ years imprisonment? OR
+          | Public/government property? OR
+          | Fine > NPR 100,000? OR
+          | Claim value > NPR 500,000?
+          E1: YES → HIGH COURT (Section 8)
+            | Has appellate jurisdiction
+          E2: NO → Is the imprisonment 3+ years OR
+            | fine > NPR 500,000 OR claim > NPR 2,500,000?
+            F1: YES → SUPREME COURT (Section 9)
+              | If High Court reversed/modified
+            F2: NO → HIGH COURT (Section 8)
+              | Has appellate jurisdiction
+        D2: NO → Is this from a quasi-judicial body?
+          E1: YES → Is it a federal quasi-judicial body?
+            F1: YES → DISTRICT COURT (Section 7)
+            F2: NO → HIGH COURT (Section 8)
+          E2: NO → CHECK SPECIFIC LAW
+    B2: NO → Is this an original case (first filing)?
+      C1: YES → Check subject matter and specific law
+      C2: NO → Review the procedural route

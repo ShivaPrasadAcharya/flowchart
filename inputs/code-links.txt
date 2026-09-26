@@ -1,0 +1,11 @@
+A: Receive application
+B: Documents complete?
+C1: Approve
+C2: Request missing documents
+D: Record outcome
+
+A -> B
+B ->|YES| C1
+B ->|NO| C2
+C1 -> D
+C2 -> D

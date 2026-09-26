@@ -1,0 +1,6 @@
+A: Receive application
+  B1: YES → Documents complete?
+    C1: YES → Approve the application
+      | Record the decision
+    C2: NO → Request missing documents
+  B2: NO → Return to applicant
