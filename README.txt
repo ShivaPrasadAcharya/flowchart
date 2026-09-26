@@ -29,3 +29,17 @@ Opening index.html directly shows no charts until you choose inputs. Adding
 new files or changing existing text then updates the corresponding charts.
 Click SEE TEXT above a chart to open its file in the initially hidden input
 panel. Use Hide input panel to collapse it completely again.
+
+The input editor soft-wraps long lines without changing the .txt file. Type
+/n at the desired position within an item or note to force a new chart line.
+Under Customize, Text wrap can use Automatic + /n or Manual /n only. The
+Chart width / screen setting defaults to 7:10: automatic text fits within
+about seven tenths of the chart viewport width, including in full screen.
+
+Select text in the input and use the B, I, U buttons or Ctrl/Cmd+B, I, U.
+These insert **bold**, *italic*, and __underline__ text markers in the .txt
+file, and the chart displays the formatting. The branch word color also
+applies to capitalized text at the start of a segment, including text on
+either side of an arrow. Use the copy icons to copy input text or all visible
+charts as one PNG image. If image clipboard access is unavailable, Copy chart
+copies its visible text instead.
