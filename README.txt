@@ -38,8 +38,13 @@ about seven tenths of the chart viewport width, including in full screen.
 
 Select text in the input and use the B, I, U buttons or Ctrl/Cmd+B, I, U.
 These insert **bold**, *italic*, and __underline__ text markers in the .txt
-file, and the chart displays the formatting. The branch word color also
-applies to capitalized text at the start of a segment, including text on
-either side of an arrow. Use the copy icons to copy input text or all visible
-charts as one PNG image. If image clipboard access is unavailable, Copy chart
-copies its visible text instead.
+file, and the chart displays the formatting. Capitalized words (including
+YES and NO) retain their ordinary text color unless you explicitly format
+them. When a long statement follows an arrow, wrapped lines align below the
+start of the statement, not below the arrow or its preceding label.
+
+Use the copy icons to copy input text or all visible charts as one PNG image.
+A green tick briefly confirms success. If image clipboard access is
+unavailable, Copy chart copies its visible text instead. The DOCX download
+exports the current chart as paginated, high-resolution images in a Word
+document, preserving connectors, dashes, dots, and text appearance.
