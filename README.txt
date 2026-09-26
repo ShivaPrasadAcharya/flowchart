@@ -38,13 +38,21 @@ about seven tenths of the chart viewport width, including in full screen.
 
 Select text in the input and use the B, I, U buttons or Ctrl/Cmd+B, I, U.
 These insert **bold**, *italic*, and __underline__ text markers in the .txt
-file, and the chart displays the formatting. Capitalized words (including
-YES and NO) retain their ordinary text color unless you explicitly format
-them. When a long statement follows an arrow, wrapped lines align below the
-start of the statement, not below the arrow or its preceding label.
+file, and the chart displays the formatting. Text before an arrow (→ or ->)
+always appears bold in the configurable Text before arrow color. The text
+after the arrow uses only the formatting selected in the input. Capitalized
+words (including YES and NO) elsewhere retain their ordinary appearance.
+When a long statement follows an arrow, wrapped lines align below the start
+of the statement, not below the arrow or its preceding label.
+
+Add a line such as Caption: **My chart** anywhere in a .txt input to display
+that text in the chart. The caption supports B, I, U markers and /n breaks;
+Customize lets you place it above or below the chart and set its alignment,
+size, and color. The caption is included in image, SVG, and DOCX exports.
 
 Use the copy icons to copy input text or all visible charts as one PNG image.
 A green tick briefly confirms success. If image clipboard access is
-unavailable, Copy chart copies its visible text instead. The DOCX download
+unavailable, Copy chart copies its visible text instead. Neither copy mode
+adds the input file name to the output. The DOCX download
 exports the current chart as paginated, high-resolution images in a Word
 document, preserving connectors, dashes, dots, and text appearance.
